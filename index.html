@@ -19,6 +19,9 @@
       padding: 0;
       font-family: Arial, sans-serif;
       color: #333;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
     }
     
     /* Header */
@@ -117,11 +120,12 @@
       color: #000;
     }
 
-    /* Footer or Info Section */
+    /* Info Section (could be the partnership logos, etc.) */
     .info-section {
       background-color: #f4f4f4;
       padding: 2rem;
       text-align: center;
+      margin-top: auto;  /* Push to bottom if there's space */
     }
     .info-section h2 {
       margin-bottom: 1rem;
@@ -143,11 +147,13 @@
       color: #000;
     }
 
+    /* Footer */
     footer {
       background-color: #285AA8;
       color: #fff;
       text-align: center;
       padding: 1rem 0;
+      margin-top: auto;  /* This ensures footer sticks to bottom if there's space */
     }
   </style>
 </head>
@@ -192,7 +198,7 @@
     <p>
       <img src="https://via.placeholder.com/120x60?text=UNLV+Logo" alt="UNLV Athletics Logo" />
     </p>
-    <p>We’re here to keep your home comfortable all year long!</p>
+    <p>We're here to keep your home comfortable all year long!</p>
     <a href="#">Schedule Service Now</a>
   </section>
 
